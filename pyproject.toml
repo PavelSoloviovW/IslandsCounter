@@ -1,0 +1,23 @@
+[project]
+name = "number-of-islands"
+version = "0.1.0"
+description = "Task 1. Number of islands."
+readme = "README.md"
+authors = [
+    { name = "Soloviov Pavlo", email = "pavelsoloviovw@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.1.1",
+]
+
+[project.scripts]
+number-of-islands = "number_of_islands.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
